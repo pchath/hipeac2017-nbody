@@ -32,6 +32,7 @@
   <ItemGroup>
     <None Include="octree_code\Makefile" />
     <None Include="octree_code\octree.vcproj" />
+    <None Include="nbody-tree-orig.optrpt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="quadtree.h">
