@@ -16,10 +16,10 @@ void randomizeBodies_seq_opt(float *data, int n) {
 
 void bodyForce_seq_opt(BodySystem p, float dt, int n, int tileSize) {
 
-#pragma omp parallel for schedule(static) num_threads(4)
 	for (int tile = 0; tile < n; tile += tileSize) {
 		int to = tile + tileSize;
 		if (to > n) to = n;
+#pragma omp parallel for schedule(static)
 		for (int i = 0; i < n; i++) {
 			float Fx = 0.0f; float Fy = 0.0f; float Fz = 0.0f;
 #pragma vector aligned
