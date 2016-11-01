@@ -41,6 +41,9 @@
     <ClCompile Include="octree_code\demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="nbody-tree-orig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="octree_code\License.txt" />

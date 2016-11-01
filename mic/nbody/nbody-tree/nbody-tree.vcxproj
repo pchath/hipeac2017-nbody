@@ -87,6 +87,7 @@
     <ClInclude Include="octree_code\tinyvector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="nbody-tree-orig.cpp" />
     <ClCompile Include="octree_code\demo.cpp" />
   </ItemGroup>
   <ItemGroup>
