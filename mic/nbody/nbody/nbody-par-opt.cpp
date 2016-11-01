@@ -14,7 +14,7 @@ void randomizeBodies_seq_opt(float *data, int n) {
 	}
 }
 
-void bodyForce_seq_opt(BodySystem* bodies, float dt, int n, int tileSize) {
+void bodyForce_par_opt(BodySystem* bodies, float dt, int n, int tileSize) {
 
 	int nTiles = n / tileSize;
 #pragma omp parallel for schedule(static) num_threads(4)
@@ -76,7 +76,7 @@ int main(const int argc, const char** argv) {
 	for (int iter = 1; iter <= nIters; iter++) {
 		StartTimer();
 
-		bodyForce_seq_opt(bodies, dt, nBodies, tileSize); // compute interbody forces
+		bodyForce_par_opt(bodies, dt, nBodies, tileSize); // compute interbody forces
 		BodySystem p = bodies[0];
 
 #pragma ivdep

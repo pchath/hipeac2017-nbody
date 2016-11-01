@@ -14,7 +14,7 @@ void randomizeBodies_seq_opt(float *data, int n) {
 	}
 }
 
-void bodyForce_seq_opt(BodySystem p, float dt, int n, int tileSize) {
+void bodyForce_par(BodySystem p, float dt, int n, int tileSize) {
 
 	for (int tile = 0; tile < n; tile += tileSize) {
 		int to = tile + tileSize;
@@ -62,7 +62,7 @@ int main(const int argc, const char** argv) {
 	for (int iter = 1; iter <= nIters; iter++) {
 		StartTimer();
 
-		bodyForce_seq_opt(p, dt, nBodies, tileSize); // compute interbody forces
+		bodyForce_par(p, dt, nBodies, tileSize); // compute interbody forces
 
 #pragma ivdep
 #pragma vector aligned
