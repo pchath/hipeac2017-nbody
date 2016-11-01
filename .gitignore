@@ -55,3 +55,7 @@ mic/nbody/nbody/nbody-seq-opt-align-tile.ilk
 mic/nbody/nbody.sdf
 *.log
 mic/nbody/nbody/My Advisor Results - nbody/e000/hs009/config/collection.cfg
+*.ilk
+mic/nbody/nbody-tree/My Amplifier XE Results - nbody-tree/My Amplifier XE Results - nbody-tree.amplxeproj
+mic/nbody/nbody/Debug/nbody.tlog/unsuccessfulbuild
+*.amplxeproj

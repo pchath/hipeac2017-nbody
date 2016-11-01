@@ -21,6 +21,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>Intel C++ Compiler 17.0</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>Sequential</UseIntelMKL>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -78,26 +79,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="octree_code\array.h" />
-    <ClInclude Include="octree_code\array2d.h" />
-    <ClInclude Include="octree_code\numtraits.h" />
-    <ClInclude Include="octree_code\octree.h" />
-    <ClInclude Include="octree_code\point3d.h" />
-    <ClInclude Include="octree_code\shareddata.h" />
-    <ClInclude Include="octree_code\tinyvector.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="nbody-tree-orig.cpp" />
-    <ClCompile Include="octree_code\demo.cpp" />
+    <ClCompile Include="quadtree.cpp" />
+    <ClCompile Include="timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="octree_code\License.txt" />
     <Text Include="octree_code\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="nbody-tree-orig.optrpt" />
     <None Include="octree_code\Makefile" />
-    <None Include="octree_code\octree.tcc" />
     <None Include="octree_code\octree.vcproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="quadtree.h" />
+    <ClInclude Include="timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
