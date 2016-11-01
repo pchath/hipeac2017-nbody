@@ -88,6 +88,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="nbody-par-opt.cpp" />
     <ClCompile Include="nbody-par.cpp" />
     <ClCompile Include="nbody-seq-opt-align-tile.cpp" />
     <ClCompile Include="nbody-seq-opt-align.cpp" />

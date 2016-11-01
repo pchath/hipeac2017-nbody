@@ -26,14 +26,24 @@
     <ClCompile Include="nbody-seq-original.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="nbody-seq-opt.cpp">
+    <ClCompile Include="timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="timer.cpp">
+    <ClCompile Include="nbody-par.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nbody-seq-opt-align-tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nbody-seq-opt-align.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nbody-par-opt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Debug\nbody-seq-opt.optrpt" />
+    <None Include="nbody-seq-opt.optrpt" />
   </ItemGroup>
 </Project>
