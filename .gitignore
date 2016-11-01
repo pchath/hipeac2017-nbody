@@ -48,3 +48,10 @@ Temporary Items
 *.optrpt
 *.obj
 *.advias2
+*.exe
+mic/nbody/nbody/nbody-seq-opt-align-tile.ilk
+*.pdb
+*.opensdf
+mic/nbody/nbody.sdf
+*.log
+mic/nbody/nbody/My Advisor Results - nbody/e000/hs009/config/collection.cfg
