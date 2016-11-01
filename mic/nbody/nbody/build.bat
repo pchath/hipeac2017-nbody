@@ -1,32 +1,5 @@
 @ECHO OFF
 setlocal
-Rem ****************************************************************************
-Rem 
-Rem  Copyright (C) 2015 Intel Corporation. All Rights Reserved.
-Rem 
-Rem  The source code contained or described herein and all
-Rem  documents related to the source code ("Material") are owned by
-Rem  Intel Corporation or its suppliers or licensors. Title to the
-Rem  Material remains with Intel Corporation or its suppliers and
-Rem  licensors. The Material is protected by worldwide copyright
-Rem  laws and treaty provisions.  No part of the Material may be
-Rem  used, copied, reproduced, modified, published, uploaded,
-Rem  posted, transmitted, distributed,  or disclosed in any way
-Rem  except as expressly provided in the license provided with the
-Rem  Materials.  No license under any patent, copyright, trade
-Rem  secret or other intellectual property right is granted to or
-Rem  conferred upon you by disclosure or delivery of the Materials,
-Rem  either expressly, by implication, inducement, estoppel or
-Rem  otherwise, except as expressly provided in the license
-Rem  provided with the Materials.
-Rem 
-Rem ****************************************************************************
-Rem Content:
-Rem      Windows Build Script for Sample vec_samples
-Rem
-Rem Part of the vec_samples tutorial. See "Tutorial: Auto-vectorization"
-Rem in the Intel(R) C++ Compiler Tutorials document
-Rem ****************************************************************************
 
 del *.o *.obj *.exe *.pdb *.ilk > nul 2>&1
 if ""%1"" == ""clean"" exit /b
