@@ -52,6 +52,12 @@ if ""%1"" == ""par"" (
 icl /nologo %CFLAGS% /c timer.cpp nbody-par.cpp
 icl %CFLAGS% /Fe:nbody-par *.obj
 )
+
+if ""%1"" == ""par-opt"" (
+icl /nologo %CFLAGS% /c timer.cpp nbody-par-opt.cpp
+icl %CFLAGS% /Fe:nbody-par-opt *.obj
+)
+
 @ECHO ON
 
 
