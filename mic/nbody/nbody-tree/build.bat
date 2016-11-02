@@ -11,6 +11,10 @@ icl /nologo %CFLAGS% /c quadtree.cpp timer.cpp nbody-tree-orig.cpp
 icl %CFLAGS% /Fe:nbody-tree-orig *.obj
 )
 
+if ""%1"" == ""par"" (
+icl /nologo %CFLAGS% /c quadtree.cpp timer.cpp nbody-tree-par.cpp
+icl %CFLAGS% /Fe:nbody-tree-par *.obj
+)
 
 @ECHO ON
 

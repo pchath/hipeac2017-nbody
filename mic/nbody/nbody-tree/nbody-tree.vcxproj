@@ -80,6 +80,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="nbody-tree-orig.cpp" />
+    <ClCompile Include="nbody-tree-par.cpp" />
     <ClCompile Include="quadtree.cpp" />
     <ClCompile Include="timer.cpp" />
   </ItemGroup>
