@@ -14,4 +14,4 @@ N-body simulation:
 
 -- This project handles only quad trees and hence supports only two dimensions. Code for quad trees is taken from "https://github.com/ninjin/barnes-hut-sne". 
 
--- I have updated the existing code to make it parallelizable. (Still working on it)
+-- I have updated the existing code to make it parallelizable using OpenMP parallel for with reduction clause
